@@ -81,7 +81,7 @@ float getDistance(int anEcho, int aTrig) {
 
 //function to make the tail wiggle when you "pet" its head
 void tailWag() {
-  if (abs(prevVal - currentVal) > 10) {
+  if (abs(prevVal - currentVal) > 30) {
     Serial.println("right");
     myServo.write(60);
     delay(500);
